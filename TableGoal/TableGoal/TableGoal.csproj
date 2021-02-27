@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{55F5DF26-60F5-4FF1-9359-06168306C55E}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows Phone</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PaperSoccer</RootNamespace>
+    <AssemblyName>Paper Soccer Online</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows Phone</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>de969387-5a4e-4f2e-bc1f-a45c80575629</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <XapFilename>$(AssemblyName).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <XnaWindowsPhoneManifestTemplate>Properties\WMAppManifest.xml</XnaWindowsPhoneManifestTemplate>
+    <TileImage>Background.png</TileImage>
+    <TileTitle>Paper Soccer Online</TileTitle>
+    <SupportedCultures>
+    </SupportedCultures>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <XnaRefreshLevel>1</XnaRefreshLevel>
+    <WPTombstoneEnabled>False</WPTombstoneEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows Phone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows Phone\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Windows Phone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows Phone\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS_PHONE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AppWarp_WP7_SDK">
+      <HintPath>DLLs\AppWarp_WP7_SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Advertising.Mobile, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Advertising.Mobile.Xna, Version=6.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.WindowsPhone">
+      <HintPath>DLLs\Newtonsoft.Json.WindowsPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Drawable\Coach.cs" />
+    <Compile Include="Drawable\GlobalMultiRoom.cs" />
+    <Compile Include="Drawable\PipTalkBaloon.cs" />
+    <Compile Include="Drawable\UIScrollableListGlobal.cs" />
+    <Compile Include="Drawable\RunningTimeIndicator.cs" />
+    <Compile Include="Drawable\GroupTable.cs" />
+    <Compile Include="Drawable\MultiplayerTips.cs" />
+    <Compile Include="Drawable\UIJumpingUIPicture.cs" />
+    <Compile Include="Drawable\UIScrollableList.cs" />
+    <Compile Include="GameStates\PipTalkSelectionState.cs" />
+    <Compile Include="GameStates\PlayerProfileState.cs" />
+    <Compile Include="GameStates\GlobalMultiEndGameState.cs" />
+    <Compile Include="GameStates\GlobalMultiGameplayState.cs" />
+    <Compile Include="GameStates\GlobalMultiLobbyState.cs" />
+    <Compile Include="GameStates\GlobalMultiJoinState.cs" />
+    <Compile Include="GameStates\GlobalMultiHostState.cs" />
+    <Compile Include="GameStates\GlobalMultiRoomsState.cs" />
+    <Compile Include="GameStates\PlayerMultiStatsState.cs" />
+    <Compile Include="GameStates\WifiEndGameState.cs" />
+    <Compile Include="GameStates\WifiRoomsListState.cs" />
+    <Compile Include="Drawable\DrawableOpponent.cs" />
+    <Compile Include="GlobalMulti\ConnectionListener.cs" />
+    <Compile Include="GlobalMulti\GlobalMultiplayerContext.cs" />
+    <Compile Include="GlobalMulti\GlobalMultiProvider.cs" />
+    <Compile Include="GlobalMulti\KnownRoomProperties.cs" />
+    <Compile Include="GlobalMulti\LobbyReqListener.cs" />
+    <Compile Include="GlobalMulti\MoveMessage.cs" />
+    <Compile Include="GlobalMulti\NotificationListener.cs" />
+    <Compile Include="GlobalMulti\RoomReqListener.cs" />
+    <Compile Include="GlobalMulti\ZoneReqListener.cs" />
+    <Compile Include="Misc\PipTalkWriterReader.cs" />
+    <Compile Include="Misc\GlobalMultiPlayer.cs" />
+    <Compile Include="Misc\OptionsWriterReader.cs" />
+    <Compile Include="Misc\IOpponent.cs" />
+    <Compile Include="Misc\NetworkInterfaceHelper.cs" />
+    <Compile Include="Misc\WifiPlayer.cs" />
+    <Compile Include="WlanMulti\GameCommands.cs" />
+    <Compile Include="GameStates\WifiLobbyState.cs" />
+    <Compile Include="GameStates\WifiJoinSelectionState.cs" />
+    <Compile Include="GameStates\WifiHostSelectionState.cs" />
+    <Compile Include="GameStates\MultiplayerState.cs" />
+    <Compile Include="GameStates\PresentStatisticsState.cs" />
+    <Compile Include="GameStates\WcSelectedFlagState.cs" />
+    <Compile Include="GameStates\WcSummaryState.cs" />
+    <Compile Include="Misc\Countries.cs" />
+    <Compile Include="Drawable\Digits.cs" />
+    <Compile Include="Drawable\UIBall.cs" />
+    <Compile Include="GameStates\WcFlagSelectionState.cs" />
+    <Compile Include="GameStates\WcGroupTableState.cs" />
+    <Compile Include="GameStates\WorldCupState.cs" />
+    <Compile Include="Misc\CountryTeam.cs" />
+    <Compile Include="Misc\Field.cs" />
+    <Compile Include="GameStates\GameFinishedState.cs" />
+    <Compile Include="GameStates\ControllsChangeState.cs" />
+    <Compile Include="GameStates\BuyFullVersionMenu.cs" />
+    <Compile Include="GameStates\HowToPlayState.cs" />
+    <Compile Include="Misc\AudioManager.cs" />
+    <Compile Include="Drawable\ColorSelector.cs" />
+    <Compile Include="Misc\AIPlayer.cs" />
+    <Compile Include="Drawable\CombineRatioButtons.cs" />
+    <Compile Include="Drawable\CheckBox.cs" />
+    <Compile Include="GameStates\NewGameMenu.cs" />
+    <Compile Include="Misc\ControllerButton.cs" />
+    <Compile Include="Drawable\Ball.cs" />
+    <Compile Include="Drawable\Board.cs" />
+    <Compile Include="Drawable\MenuButton.cs" />
+    <Compile Include="Drawable\Menu.cs" />
+    <Compile Include="GameStates\OptionMenuState.cs" />
+    <Compile Include="Misc\FIFAboard.cs" />
+    <Compile Include="Misc\GameVariables.cs" />
+    <Compile Include="Misc\GameRules.cs" />
+    <Compile Include="Drawable\DrawableGameObject.cs" />
+    <Compile Include="Misc\GameMove.cs" />
+    <Compile Include="GameStates\GameState.cs" />
+    <Compile Include="GameStates\GameplayState.cs" />
+    <Compile Include="GameStates\GameStatesManager.cs" />
+    <Compile Include="GameStates\PauseState.cs" />
+    <Compile Include="Misc\Statistics.cs" />
+    <Compile Include="Misc\Translator.cs" />
+    <Compile Include="Misc\Input.cs" />
+    <Compile Include="GameStates\MainMenuState.cs" />
+    <Compile Include="Drawable\MovesOnBoard.cs" />
+    <Compile Include="Misc\OnScreenControls.cs" />
+    <Compile Include="Misc\PlayerWriterReader.cs" />
+    <Compile Include="Misc\WorldCupProgress.cs" />
+    <Compile Include="WlanMulti\DiagnosticsHelper.cs" />
+    <Compile Include="WlanMulti\MultiGamePlay.cs" />
+    <Compile Include="WlanMulti\PlayerInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Misc\Team.cs" />
+    <Compile Include="Drawable\UIElement.cs" />
+    <Compile Include="Drawable\UIPicture.cs" />
+    <Compile Include="Drawable\UIButton.cs" />
+    <Compile Include="Drawable\UIClock.cs" />
+    <Compile Include="Drawable\UIShirt.cs" />
+    <Compile Include="WlanMulti\UdpAnySourceMulticastChannel.cs" />
+    <Compile Include="WlanMulti\UdpPacketReceivedEventArgs.cs" />
+    <None Include="Properties\AppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+      <SubType>Designer</SubType>
+    </None>
+    <Compile Include="Program.cs" />
+    <Compile Include="Drawable\RadioButton.cs" />
+    <Compile Include="GameStates\SelectionState.cs" />
+    <Compile Include="GameStates\SplashScreenState.cs" />
+    <Compile Include="TableGoal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+    <Content Include="Background.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TableGoalContent\TableGoalContent.contentproj">
+      <Name>TableGoalContent</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

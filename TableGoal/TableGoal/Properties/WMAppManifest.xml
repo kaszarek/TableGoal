@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.0">
+  <App xmlns="" ProductID="{fb4f5407-d41d-4322-92b3-68f0b7569301}" Title="Paper Soccer Online" RuntimeType="XNA" Version="1.2.0.0" Genre="Apps.Normal" Author="" Description="" Publisher="">
+    <IconPath IsRelative="true" IsResource="false">
+    </IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_MEDIALIB" />
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_IDENTITY_USER"/>
+      <Capability Name="ID_CAP_PHONEDIALER"/>
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="TableGoalToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">
+          </BackgroundImageURI>
+          <Count>0</Count>
+          <Title>
+          </Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>

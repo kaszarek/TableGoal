@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableGoal", "TableGoal\TableGoal\TableGoal.csproj", "{55F5DF26-60F5-4FF1-9359-06168306C55E}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "TableGoalContent", "TableGoal\TableGoalContent\TableGoalContent.contentproj", "{38CF636C-0AD7-4B62-9004-83F34FE3653D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55F5DF26-60F5-4FF1-9359-06168306C55E}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{55F5DF26-60F5-4FF1-9359-06168306C55E}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{55F5DF26-60F5-4FF1-9359-06168306C55E}.Debug|Windows Phone.Deploy.0 = Debug|Windows Phone
+		{55F5DF26-60F5-4FF1-9359-06168306C55E}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{55F5DF26-60F5-4FF1-9359-06168306C55E}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{55F5DF26-60F5-4FF1-9359-06168306C55E}.Release|Windows Phone.Deploy.0 = Release|Windows Phone
+		{38CF636C-0AD7-4B62-9004-83F34FE3653D}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{38CF636C-0AD7-4B62-9004-83F34FE3653D}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
